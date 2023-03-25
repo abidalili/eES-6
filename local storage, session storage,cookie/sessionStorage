@@ -1,0 +1,30 @@
+//sessonStorage
+
+//localSorage vs sessonStorage
+//10mb vs 5mb
+//parmanent vs sesson(tab)
+
+//setItem
+/*sessionStorage.setItem("userName", "abida lili");
+sessionStorage.setItem("userPass", "2112");*/
+
+//get item
+/*const user = sessionStorage.getItem("userName", "abida lili");
+const userPass = sessionStorage.getItem("userPass", "2112");
+console.log(user, userPass);*/
+
+//remove Item
+/*const user = sessionStorage.removeItem("userName");
+const userPass = sessionStorage.removeItem("userPass");*/
+
+//set item using variable
+/*const user = {
+  id: "102",
+  name: "abida",
+};
+sessionStorage.setItem("user", JSON.stringify(user));*/
+
+//getItem
+
+const userInfo = JSON.parse(sessionStorage.getItem("user"));
+console.log(userInfo);
