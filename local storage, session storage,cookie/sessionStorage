@@ -26,5 +26,5 @@ sessionStorage.setItem("user", JSON.stringify(user));*/
 
 //getItem
 
-const userInfo = JSON.parse(sessionStorage.getItem("user"));
-console.log(userInfo);
+/*const userInfo = JSON.parse(sessionStorage.getItem("user"));
+console.log(userInfo);*/
