@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- front size dropdown menu -->
+      <label for="selectFrontSize">Select Front-size:</label>
+      <select name="selectFrontSize" id="selectFrontSize">
+        <option value="16px">16px</option>
+        <option value="18px">18px</option>
+        <option value="20px">20px</option>
+        <option value="22px">22px</option>
+      </select>
+
+      <!-- BG color dropdown menu -->
+      <label for="selectBgColor">Select Background-color:</label>
+      <select name="selectBgColor" id="selectBgColor">
+        <option value="#778899">Light Gray</option>
+        <option value="#9370DB">Medium Purple</option>
+        <option value="#7FFFD4">Aquamarine</option>
+        <option value="#FFE4E1">Misty Rose</option>
+      </select>
+      <button type="submit" id="resetBtn">reset</button>
+      <main>
+        <p>
+          The web storage API provides mechanisms for the client’s browser to
+          securely store and easily access key-value pairs. This is useful for
+          storing simple data such as usernames or emails, as well as checking
+          whether a user can access a particular resource by storing data such
+          as access and refresh tokens. We can easily view stored data on the
+          client’s browser using JavaScript client-side code running in that
+          browser, so if a user leaves the site and later returns, your JS code
+          can read from window.localStorage to retrieve any data saved in it. In
+          this article, we’ll look at how to stringify and parse JavaScript
+          objects into JSON strings so that they can be saved in localStorage.
+          We’ll also learn the differences between localStorage, sessionStorage,
+          and cookies, as well as the benefits and drawbacks of using cookies
+          instead of localStorage.
+        </p>
+        <p>
+          when the user selects the dark theme, we save this selection and store
+          it within the browser (using the Local Storage); when the page is
+          loaded, we check to see if a theme selection was previously made and
+          update the website interface accordingly.Local storage is a form of
+          web storage that stores data for a long time. This could be a day, a
+          week, or even a year. This depends upon the developer’s preference. It
+          is important to note that local storage only stores strings so, if you
+          wish to store objects, lists, or arrays, you must convert them into a
+          string using JSON.stringify().
+        </p>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
